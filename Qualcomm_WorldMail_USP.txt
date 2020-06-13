@@ -1,0 +1,26 @@
+Unquoted Service Path in "Qualcomm WorldMail 3.0":
+
+wmic service get name,pathname,displayname,startmode | findstr /i auto | findstr /i /v "C:\Windows\\" | findstr /i /v """       
+                                     
+WorldMail IMAP4 Server                     IMAP4A           C:\Program Files\Qualcomm\Worldmail3\IMAP4A.exe                                          Auto       
+WorldMail POP3 Server                      POP3A            C:\Program Files\Qualcomm\Worldmail3\POP3A.exe                                           Auto       
+WorldMail SMTP Receiver                    SMTPRA           C:\Program Files\Qualcomm\Worldmail3\SMTPRA.exe                                          Auto       
+WorldMail SMTP Delivery Agent              SMTPDA           C:\Program Files\Qualcomm\Worldmail3\SMTPDA.exe                                          Auto       
+WorldMail LDAP Directory Server            LDAP3A           C:\Program Files\Qualcomm\Worldmail3\LDAP3A.exe                                          Auto       
+WorldMail Mail Management Server           MAILMA           C:\Program Files\Qualcomm\Worldmail3\MAILMA.exe                                          Auto       
+WorldMail HTTP Management Agent            HTTPMA           C:\Program Files\Qualcomm\Worldmail3\HTTPMA.exe
+
+C:\Users\Sarang>sc qc IMAP4A
+[SC] QueryServiceConfig SUCCESS
+SERVICE_NAME: IMAP4A
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START  (DELAYED)
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Program Files\Qualcomm\Worldmail3\IMAP4A.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : WorldMail IMAP4 Server
+        DEPENDENCIES       : LanmanWorkstation
+                           : Tcpip
+                           : Afd
+        SERVICE_START_NAME : LocalSystem

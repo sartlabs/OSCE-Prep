@@ -1,4 +1,4 @@
-# Exploit Title: Tabs MailCarrier 2.51 - 'EHLO' SEH Based Remote Buffer Overflow
+# Exploit Title: TABS MailCarrier 2.51 - 'EHLO' SEH Based Remote Buffer Overflow
 # Buffer overflow in MailCarrier 2.51 and earlier allows remote attackers to execute arbitrary code via a long EHLO request.
 # Exploit Author: Sarang Tumne @SarT
 # Date: 20th June, 2020

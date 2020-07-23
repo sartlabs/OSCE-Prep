@@ -1,5 +1,5 @@
 # Exploit Title: Port Forwarding Wizard 4.8.0 - SEH based Buffer Overflow in Register 
-# Buffer overflow in upRedSun Port Forwarding Wizard 4.8.0 and earlier version allows remote attackers to execute arbitrary code via a long request in the Register feature.
+# Buffer overflow in upRedSun Port Forwarding Wizard 4.8.0 and earlier version allows local attackers to execute arbitrary code via a long request in the Register feature.
 # Exploit Author: Sarang Tumne @SarT
 # Date: 18th July, 2020
 # CVE ID: 

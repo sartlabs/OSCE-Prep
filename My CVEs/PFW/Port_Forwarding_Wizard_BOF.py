@@ -2,9 +2,10 @@
 # Buffer overflow in upRedSun Port Forwarding Wizard 4.8.0 and earlier version allows local attackers to execute arbitrary code via a long request in the Register feature.
 # Exploit Author: Sarang Tumne @SarT
 # Date: 18th July, 2020
-# CVE ID: 
-# Confirmed on release 4.8.0
+# CVE ID: -
+# Confirmed on release 4.8.0 and 4.5.0
 # Vendor: http://www.port-forwarding.net/
+# Tested on OS- Windows Vista
 
 ###############################################
 
